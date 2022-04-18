@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-family: sans-serif;
     line-height: 1.4;
@@ -5,6 +10,8 @@ body{
 
 .product{
     border: 5px solid;
+    width: 750px;
+    margin: 50px auto;
 }
 
 .product-title{
@@ -12,7 +19,10 @@ body{
     text-transform: uppercase;
     text-align: center;
     font-size: 22px;
+    padding: 20px 0;
 }
+
+
 
 .price{
     font-size: 24px;
@@ -23,10 +33,14 @@ body{
     text-transform: uppercase;
     font-size:12px;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
+
+
 .more-info:link, .more-info:visited {
-    color: black
+    color: black;
+    
 }
 
 .more-info:hover, .more-info:active{
@@ -36,10 +50,17 @@ body{
 .details-title{
     text-transform: uppercase;
     font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 15px;
 }
 
 .details-list{
     list-style-type: square;
+    margin-left: 25px;
+}
+
+.details-list li{
+    margin-bottom: 10px;
 }
 
 .add-cart{
@@ -49,6 +70,9 @@ body{
     background-color: black;
     border: none;
     cursor: pointer;
+    width: 100%;
+    padding: 15px 0;
+    border-top: 5px solid black;
 }
 
 .add-cart:hover{
@@ -56,3 +80,4 @@ body{
     background-color: white;
     
 }
+
