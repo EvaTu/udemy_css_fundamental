@@ -1,6 +1,31 @@
-h1, h2, h3, h4, p, li{
+/* *{
+    border-top: 3px solid blue;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
     font-family: sans-serif;
     color: #444;
+    /* border-top: 15px solid red; */
+}
+
+/* h1, h2, h3, h4, p, li{
+    font-family: sans-serif;
+    color: #444;
+} */
+
+.container{
+    width: 800px;
+    margin: 0 auto;
+    
+}
+
+article{
+    margin-bottom: 60px;
 }
 
 h1, h2, h3{
@@ -9,8 +34,13 @@ h1, h2, h3{
 
 .main-header{
     background-color: #f7f7f7;
+    padding: 20px 40px;
+    margin-bottom: 60px;
 }
 
+.post-header{
+    margin-bottom: 40px;
+}
 
 h1{
     font-size: 26px;
@@ -21,12 +51,13 @@ h1{
 
 h2{
     font-size: 40px;
-    
+    margin-bottom: 30px;
 }
 
 h3{
     font-size: 30px;
-   
+    margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 h4{
@@ -38,12 +69,23 @@ h4{
 p{
     font-size: 22px;
     line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+ul, ol{
+    margin-left: 50px;
+    margin-bottom: 20px;
 }
 
 li{
     font-size: 20px;
+    margin-bottom: 10px;
+    
 }
 
+li:last-child{
+    margin-bottom: 0;
+}
 /* footer p{
     font-size: 16px;
 } */
@@ -70,6 +112,8 @@ aside{
     border-top: 5px solid #1098ad;
     border-bottom: 5px solid #1098ad;
     background-color: #f7f7f7;
+    padding: 50px 0;
+    width: 500px;
 }
 
 /* li:nth-child(2){
@@ -98,4 +142,12 @@ a:hover{
 a:active{
     background-color: rgb(130, 128, 128);
     font-style: italic;
+}
+
+nav a:link{
+    font-size:18px;
+}
+
+.post-img{
+    width: 100%;
 }
