@@ -10,6 +10,7 @@
     width: 825px;
     margin: 50px auto;
 
+    position: relative;
 }
 
 .product-title{
@@ -46,7 +47,7 @@
 
 .details-title{
     text-transform:uppercase;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .details-list{
@@ -77,3 +78,45 @@
     border-top: 4px solid black
 }
 
+h1::before{
+    content: "SALE";
+    background-color: red;
+    color: white;
+    font-size: 13px;
+    padding: 8px 16px;
+    letter-spacing: 0.2em;
+
+    position: absolute;
+    top: -18px;
+    left: -39px;
+}
+
+.color{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 25px;
+}
+
+.color-blue{
+    background-color: blue;
+}
+
+.color-red{
+    background-color: red;
+}
+
+.color-yellow{
+    background-color: yellow;
+}
+
+.color-green{
+    background-color: green;
+}
+
+.color-brown{
+    background-color: brown;
+}
