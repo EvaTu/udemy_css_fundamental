@@ -90,7 +90,19 @@ h1::before{
     left: -39px;
 }
 
+.product-colors{
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
 .color{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+} 
+
+/* .color{
     width: 20px;
     height: 20px;
     background-color: black;
@@ -98,7 +110,7 @@ h1::before{
     display: inline-block;
     margin-right: 15px;
     margin-top: 25px;
-}
+} */
 
 .color-blue{
     background-color: blue;
@@ -120,7 +132,7 @@ h1::before{
     background-color: brown;
 }
 
-.product-img{
+/* .product-img{
     float: left;
     width: 30%;
     margin-right: 30px;
@@ -152,4 +164,40 @@ h1::before{
 .product-description{
     clear: both;
     margin-bottom: 20px;
+} */
+
+.container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 25px;
+    /* flex: 0 1 30%; */
+}
+.product-info{
+    /* width: 240px; */
+    margin-top: 20px;
+    flex: 1;
+    padding-right: 15px;
+}
+
+.product-details{
+    /* width: 240px; */
+    flex: 1;
+    margin-top: 20px;
+    padding-right: 15px;
+}
+
+.details-title{
+    margin-top: 0;
+}
+
+.product-price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.shipping{
+    margin-bottom: 0;
 }
