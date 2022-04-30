@@ -5,6 +5,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -20,7 +21,7 @@ body{
 } */
 
 .container{
-    width: 800px;
+    width: 1200px;
     margin: 0 auto;
     position: relative;
 }
@@ -66,6 +67,7 @@ h4{
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 p{
@@ -108,14 +110,16 @@ li:last-child{
 
 .related {
     list-style: none;
+    margin-left: 0;
 }
 
 aside{
     border-top: 5px solid #1098ad;
     border-bottom: 5px solid #1098ad;
     background-color: #f7f7f7;
-    padding: 50px 0;
-    width: 500px;
+    padding: 50px 40px;
+    
+    /* width: 500px; */
 }
 
 /* li:nth-child(2){
@@ -190,4 +194,50 @@ h2::after{
     right: -30px;
     top: -20px;
     color: #444;
+}
+
+/*FLOATS*/
+
+.author-img{
+    float: left;
+    margin-bottom: 20px;
+}
+
+.author{
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.main-header h1{
+    float: left;
+}
+
+.main-header nav{
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+article{
+    float: left;
+    width: 65%;
+}
+
+aside{
+    float: right;
+    width: 30%;
+}
+
+footer{
+    clear: both;
+
 }
